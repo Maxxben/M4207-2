@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+  {% block title %}Hello MonController!{% endblock %}
+
+  {% block body %}
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+</nav>
+
+
+
+
+<div class="example-wrapper">
+    <h1>Connexion</h1>
+  <br>
+
+
+<form enctype="multipart/form-data" method="post" action="/login">
+  <fieldset>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" required >
+    </div>
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit" value="submit">submit</button>
+     </fieldset>
+</form>
+
+</div>
+
+
+{% endblock %}
